@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { texts } from "./Data";
 
-export function Cards() {
+export default function Cards() {
   return (
     <>
       <Typography className=" text-center p-8 text-2xl">
