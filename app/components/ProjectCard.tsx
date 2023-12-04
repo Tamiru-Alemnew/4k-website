@@ -6,7 +6,7 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-import Cards from "@/app/components/Card";;
+// import {Cards} from "@/app/components/card";
 import { values } from "@/app/components/Data";
 import Image from "next/image";
 export function HorizontalCard() {
@@ -76,7 +76,7 @@ export function HorizontalCard() {
 
       {/* ````````````````The event cards */}
       <div>
-        <Cards />
+        {/* <Cards /> */}
       </div>
     </>
   );
