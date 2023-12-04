@@ -70,16 +70,16 @@ export default function Home() {
     },
   ];
   return (
-    <div className="bg-footer text-white-300 flex  w-full gap-15  p-24 justify-around md:gap-10">
+    <div className="bg-[#212529] text-white-300 flex  w-full gap-15  p-24 justify-around md:gap-10">
       <div className="flex flex-col md:flex-row gap-10">
         <div className="flex flex-col text-white ">
           <h1 className="text-xl font-semibold mb-4">4K Labs</h1>
-          <p className="inline-block px-2">
+          <p className="inline-block px-2 text-[#c7cdd1]">
             Some thing about 4K labs can be written here Lorem ipsum dolor, sit
             amet consectetur adipisicing elit. Beatae excepturi accusantium
             Lorem ipsum
           </p>
-          <p className="hidden md:inline-block px-2">
+          <p className="hidden md:inline-block px-2 text-[#c7cdd1]">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil
             adipisci quia saepe odio numquam, ex quasi recusandae eum error
             harum ea et non, aut impedit ducimus fugit dolorum? Id.
@@ -88,10 +88,10 @@ export default function Home() {
         <div className="flex flex-col text-white">
           <h1 className="text-xl font-semibold mb-4">Contact</h1>
           <div className="flex flex-col">
-            {Contact?.map((address,index) => (
+            {Contact?.map((address, index) => (
               <div key={index} className="flex flex-row m-2">
                 {address.icon}
-                <p>{address.name}</p>
+                <p className="text-[#c7cdd1]">{address.name}</p>
               </div>
             ))}
           </div>
@@ -104,7 +104,7 @@ export default function Home() {
             Quick Links
           </h1>
           <div className="flex flex-col hover:">
-            {QuickLinks.map((link,index) => (
+            {QuickLinks.map((link, index) => (
               <Link
                 key={index}
                 href={link.Link}
@@ -118,7 +118,7 @@ export default function Home() {
         <div className="flex flex-col text-white">
           <h1 className="text-xl font-semibold mb-4  ">Follow Us</h1>
           <div className="flex gap-3 flex-row m-3 ">
-            {SocialMedia.map((icon,index) => (
+            {SocialMedia.map((icon, index) => (
               <Link
                 key={index}
                 className=" rounded-full bg-black border-gray-600 hover:scale-123 hover:bg-black hover:text-white md:p-1"
