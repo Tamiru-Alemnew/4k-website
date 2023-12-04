@@ -50,3 +50,13 @@
 // };
 
 // export default Teams;
+
+import React from 'react'
+
+function page() {
+  return (
+    <div>tams page</div>
+  )
+}
+
+export default page
