@@ -88,8 +88,8 @@ export default function Home() {
         <div className="flex flex-col text-white">
           <h1 className="text-xl font-semibold mb-4">Contact</h1>
           <div className="flex flex-col">
-            {Contact?.map((address) => (
-              <div className="flex flex-row m-2">
+            {Contact?.map((address,index) => (
+              <div key={index} className="flex flex-row m-2">
                 {address.icon}
                 <p>{address.name}</p>
               </div>
@@ -104,18 +104,28 @@ export default function Home() {
             Quick Links
           </h1>
           <div className="flex flex-col hover:">
-            {QuickLinks.map((link) => (
-              <a href={link.Link} className="text-white m-1 hover:text-black whitespace-nowrap hover:underline underline-white">
+            {QuickLinks.map((link,index) => (
+              <Link
+                key={index}
+                href={link.Link}
+                className="text-white m-1 hover:text-black whitespace-nowrap hover:underline underline-white"
+              >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
         <div className="flex flex-col text-white">
           <h1 className="text-xl font-semibold mb-4  ">Follow Us</h1>
           <div className="flex gap-3 flex-row m-3 ">
-            {SocialMedia.map((icon) => (
-              <Link className=" hover:scale-123 hover:bg-black hover:text-white rounded-full md:p-1" href={icon.address}>{icon.icon}</Link>
+            {SocialMedia.map((icon,index) => (
+              <Link
+                key={index}
+                className=" hover:scale-123 hover:bg-black hover:text-white rounded-full md:p-1"
+                href={icon.address}
+              >
+                {icon.icon}
+              </Link>
             ))}
           </div>
         </div>

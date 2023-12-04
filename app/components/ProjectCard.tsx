@@ -6,9 +6,9 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-import { Cards } from "./Card";
+import  Cards from "./card";
 import { values } from "./Data";
-
+import Image from "next/image";
 export function HorizontalCard() {
   return (
     <>
@@ -27,7 +27,9 @@ export function HorizontalCard() {
               className=" md:w-2/5 md:h-full sm:3/5 sm:h-full shrink-0 rounded-r-r self-center "
             >
               {" "}
-              <img
+              <Image
+                width={1000}
+                height={1000}
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
                 alt="card-image"
                 className="h-full w-full object-cover "

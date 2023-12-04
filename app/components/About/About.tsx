@@ -4,10 +4,10 @@ import MissionAndVision from "./MissionAndVision";
 
 export default function about() { 
     return (
-        <div>
-            <WhoAreWe />
-            <MissionIntro />
-            <MissionAndVision />
-        </div>
-    )
+      <div className="pt-[120px]">
+        <WhoAreWe />
+        <MissionIntro />
+        <MissionAndVision />
+      </div>
+    );
 }

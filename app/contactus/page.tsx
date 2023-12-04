@@ -106,7 +106,7 @@ const ContactUs = ()=>{
             <div className="z-10 relative h-full max-md:min-h-[350px]">
                 <iframe src="https://maps.google.com/maps?q=4k Labs&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     className="left-0 top-0 h-96 w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg b-0" 
-                     allowfullscreen></iframe>
+                     allowFullScreen></iframe>
             </div>
 
         </div>
