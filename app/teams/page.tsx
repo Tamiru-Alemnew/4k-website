@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import TeamMemberCard from "@/app/components/card";
+import TeamMemberCard from "../components/Card";
 import { TeamMember } from "@/app/types/types";
 import { teamData } from "@/app/data/teamdata";
 import { DefaultPagination } from "@/app/components/pagination";
