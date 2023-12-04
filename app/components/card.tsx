@@ -9,7 +9,7 @@ import {
 import { texts } from "@/app/components/Data";
 import Image from "next/image";
 
-export default function Cards({ memberData}: any) {
+function Cards({ memberData}: any) {
   return (
     <>
       <Typography className=" text-center p-8 text-2xl">Events</Typography>
@@ -47,3 +47,5 @@ export default function Cards({ memberData}: any) {
     </>
   );
 }
+
+export default Cards;
