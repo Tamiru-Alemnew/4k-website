@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardData } from '../types/types';
+import { CardData } from "@/app/types/types";
 import Image from 'next/image';
 
 
@@ -16,7 +16,9 @@ const HorizontalCard: React.FC<HorizontalCardProps> = ({ eventData, index }) => 
     <div className={`w-3/4 m-auto border mt-10 border-gray-200 rounded-lg overflow-hidden shadow-lg`}>
       <div className={`flex flex-col lg:flex-row ${index % 2 === 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
         <div className="lg:w-1/2">
-          <Image src={imageUrl} alt="card-image" className="h-full w-full object-cover" />
+          <Image src={imageUrl}
+          width={1000}
+          height={1000} alt="card-image" className="h-full w-full object-cover" />
         </div>
         <div className="p-6 lg:w-1/2">
           <h6 className="text-gray-500 mb-4 uppercase">{category}</h6>

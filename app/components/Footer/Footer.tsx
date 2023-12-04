@@ -121,7 +121,7 @@ export default function Home() {
             {SocialMedia.map((icon,index) => (
               <Link
                 key={index}
-                className=" hover:scale-123 hover:bg-black hover:text-white rounded-full md:p-1"
+                className=" rounded-full bg-black border-gray-600 hover:scale-123 hover:bg-black hover:text-white md:p-1"
                 href={icon.address}
               >
                 {icon.icon}

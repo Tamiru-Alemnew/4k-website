@@ -6,8 +6,8 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-import  Cards from "./card";
-import { values } from "./Data";
+import Cards from "@/app/components/card";
+import { values } from "@/app/components/Data";
 import Image from "next/image";
 export function HorizontalCard() {
   return (

@@ -1,7 +1,6 @@
 import React from 'react'
-import robot from '../../public/images/robot.png'
 import Image from 'next/image'
-import Button from './button'
+import Button from "@/app/components/button";
 
 const Hero = () => {
   return (
@@ -14,7 +13,10 @@ const Hero = () => {
       <Button> EXPLORE OUR JOURNEY</Button>
       </div>
       <div>
-        <Image className = 'hidden md:block' src={robot} alt = "robot"/>
+        <Image className = 'hidden md:block' src={"/images/robot.png"} 
+        width={500}
+        height={500}
+        alt = "robot"/>
       </div>
 
     </div>

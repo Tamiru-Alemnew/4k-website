@@ -6,7 +6,7 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-import { texts } from "./Data";
+import { texts } from "@/app/components/Data";
 import Image from "next/image";
 
 export default function Cards({ memberData}: any) {

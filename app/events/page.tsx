@@ -1,6 +1,6 @@
-import HorizontalCard from "../components/horizontalcard";
-import cardData from '../data/eventdata';
-import { CardData } from "../types/types";
+import HorizontalCard from "@/app/components/horizontalcard";
+import cardData from "@/app/data/eventdata";
+import { CardData } from "@/app/types/types";
 
 
 const Events = () => {
